@@ -29,7 +29,7 @@ span.title-bigger {
   height: 100vh;
 }
 .screen-content {
-  min-height: 100vh;
+  height: 100vh;
 }
 .section.fixed-height {
   min-height: 700px;
@@ -53,7 +53,18 @@ span.title-bigger {
   margin-top: 20px;
   margin-right: 40px;
 }
-
+.get-in-touch {
+  background: white;
+  width: 100px;
+  height: 1.9em;
+  font-size: .6em;
+  color: purple;
+  text-align: center;
+  font-weight: 900;
+  position: absolute;
+  right: 100px;
+  bottom: 40px;
+}
 
 #amplify-your-brand {
   background: #7E57AE;
@@ -73,7 +84,6 @@ span.title-bigger {
 
 #lets-get-acquainted {
   background: #FEC878;
-  height: 800px;
 }
 #lets-get-acquainted .content {
   height: 100%;
@@ -117,6 +127,9 @@ span.title-bigger {
   height: 495px;
   z-index: +3;
 }
+#lets-get-acquainted .scroll-down-container {
+  z-index: 5;
+}
 
 #feel-good-vibes {
   background: #5784AE;
@@ -154,7 +167,7 @@ img#good-vibes {
 #feel-good-vibes .wave-container {
   position: absolute;
   width: 250px;
-  left: 575px;
+  right: 455px;
   top: 305px;
   text-align: center;
 }
@@ -178,6 +191,9 @@ img#good-vibes {
   width: 1050px;
   z-index: +1;
 }
+#feel-good-vibes .scroll-down-container, #feel-good-vibes .get-in-touch {
+  z-index: 5;
+}
 
 #open-for-business {
   background: #F0AD9F;
@@ -195,14 +211,14 @@ img#good-vibes {
 }
 #line4 {
   position: absolute;
-  left: 600px;
+  right: 475px;
   top: 150px;
   height: 210px;
 }
 #marketing-solutions-wave {
   position: absolute;
   top: 330px;
-  left: 460px;
+  right: 560px;
   width: 210px;
 }
 .trigger-line5 {
@@ -212,7 +228,7 @@ img#good-vibes {
 #line5 {
   position: absolute;
   top: 415px;
-  left: 240px;
+  left: 310px;
   height: 382px;
   z-index: 1;
 }
@@ -234,6 +250,9 @@ img#good-vibes {
   right: 100px;
   bottom: 30px;
   height: 550px;
+}
+#open-for-business .scroll-down-container {
+  z-index: 5;
 }
 
 #lend-me-your-eyes {
@@ -335,72 +354,15 @@ img#good-vibes {
   height: 100%;
 }
 
-#contact-us {
+#about-us {
   background: #7E57AE;
 }
-#contact-us .wpforms-field-hp {
-  display: none;
+#about-us .description {
+  opacity: 0;
+  font-size: .85em;
 }
-#contact-us textarea {
-  border-radius: 0;
-}
-#contact-us div.wpforms-container-full {
-  margin: 0 20px;
-}
-#contact-us div.wpforms-container-full input {
-  height: 100%;
-  border: none;
-  background: none;
-}
-#contact-us div.wpforms-container-full textarea {
-  height: 5em;
-  border: none;
-  background: none;
-}
-#contact-us div.wpforms-container-full button {
-  font-size: .8em;
-  line-height: .5em;
-}
-#contact-us .description {
-  font-size: .8em;
-}
-#contact-us .wpforms-container {
-  background: #FEC878;
-  color: #7E57AE;
-}
-#contact-us div.wpforms-container-full .wpforms-form .wpforms-field {
-    padding: 0 10px;
-    clear: both;
-    border-bottom: 1px solid #7E57AE;
-    height: 1.8em;
-}
-#contact-us div.wpforms-container-full .wpforms-form .wpforms-field-label {
-  float: left;
-  width: 130px;
-  border-right: 1px solid #7E57AE;
-  height: 100%;
-  margin: 0 10px 0 0;
-  padding: 6px 0;
-}
-#contact-us .wpforms-field-container > div:nth-child(6) .wpforms-field-label {
-  border-right: none !important;
-}
-#contact-us .wpforms-field-container > div:nth-child(5) {
-  border-bottom: none !important;
-}
-#contact-us .wpforms-field-container > div:nth-child(6) {
-  border-top: 30px solid #7E57AE !important;
-  height: auto !important;
-  padding-bottom: 10px !important;
-}
-#contact-us div.wpforms-container-full .wpforms-form .wpforms-submit-container {
-  background: #7E57AE;
-}
-#contact-us div.wpforms-container-full .wpforms-form .wpforms-submit-container button {
-  color: #7E57AE;
-}
-#contact-us .wpforms-required-label {
-  display: none;
+#fmcg-04 {
+  margin-top: -35px;
 }
 
 #brand-activation {
@@ -469,7 +431,6 @@ img#good-vibes {
   width: auto;
 }
 
-
 #contact-us {
   background: #7E57AE;
 }
@@ -479,17 +440,18 @@ img#good-vibes {
 #contact-us textarea {
   border-radius: 0;
 }
-#contact-us label .wpforms-required-label {
-  color: red;
-}
 #contact-us div.wpforms-container-full {
   margin: 0 20px;
 }
 #contact-us div.wpforms-container-full input {
-  height: 1.5em;
+  height: 100%;
+  border: none;
+  background: none;
 }
 #contact-us div.wpforms-container-full textarea {
-  height: 3em;
+  height: 5em;
+  border: none;
+  background: none;
 }
 #contact-us div.wpforms-container-full button {
   font-size: .8em;
@@ -497,6 +459,44 @@ img#good-vibes {
 }
 #contact-us .description {
   font-size: .8em;
+}
+#contact-us .wpforms-container {
+  background: #FEC878;
+  color: #7E57AE;
+}
+#contact-us div.wpforms-container-full .wpforms-form .wpforms-field {
+    padding: 0 10px;
+    clear: both;
+    border-bottom: 1px solid #7E57AE;
+    height: 1.8em;
+}
+#contact-us div.wpforms-container-full .wpforms-form .wpforms-field-label {
+  float: left;
+  width: 130px;
+  border-right: 1px solid #7E57AE;
+  height: 100%;
+  margin: 0 10px 0 0;
+  padding: 6px 0;
+}
+#contact-us .wpforms-field-container > div:nth-child(6) .wpforms-field-label {
+  border-right: none !important;
+}
+#contact-us .wpforms-field-container > div:nth-child(5) {
+  border-bottom: none !important;
+}
+#contact-us .wpforms-field-container > div:nth-child(6) {
+  border-top: 30px solid #7E57AE !important;
+  height: auto !important;
+  padding-bottom: 10px !important;
+}
+#contact-us div.wpforms-container-full .wpforms-form .wpforms-submit-container {
+  background: #7E57AE;
+}
+#contact-us div.wpforms-container-full .wpforms-form .wpforms-submit-container button {
+  color: #7E57AE;
+}
+#contact-us .wpforms-required-label {
+  display: none;
 }
 
 #thank-you {
@@ -538,6 +538,10 @@ button.read-more {
 .scroll-down-container > div {
   animation: bounce .5s infinite alternate;
   -webkit-animation: bounce .5s infinite alternate;
+}
+.scroll-down-container a {
+  text-decoration: none;
+  color: white;
 }
 
 .animate-alpha {
@@ -705,7 +709,6 @@ Main components
 }
 .no-touch #cd-vertical-nav a span {
   float: right;
-  display: inline-block;
   -webkit-transform: scale(0.6);
   -moz-transform: scale(0.6);
   -ms-transform: scale(0.6);
@@ -741,6 +744,9 @@ Main components
   -ms-transform-origin: 50% 50%;
   -o-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
+}
+.no-touch #cd-vertical-nav li:last-child .cd-dot {
+  background-color: red;
 }
 .no-touch #cd-vertical-nav .cd-label {
   position: relative;

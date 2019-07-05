@@ -90,8 +90,16 @@ get_header(); ?>
         </div>
 
         <div class="scroll-down-container">
-          Scroll down
-          <div><i class="fas fa-chevron-down"></i></div>
+        <div>
+          <a href="#lets-get-acquainted" class="btn-scroll-down">
+            Scroll down<br />
+            <i class="fas fa-chevron-down"></i>
+          </a>
+        </div>
+        </div>
+
+        <div class="get-in-touch">
+          <a href="mailto: info@gobblerfmcg.com">Get in touch</a>
         </div>
 
       </div>
@@ -125,8 +133,16 @@ get_header(); ?>
           <img src="https://gobblerfmcg.com/wp-content/uploads/2018/11/acquinted-768x466.png" id="men-handshake" />
 
           <div class="scroll-down-container">
-            Scroll down
-            <div><i class="fas fa-chevron-down"></i></div>
+          <div>
+            <a href="#feel-good-vibes" class="btn-scroll-down">
+              Scroll down<br />
+              <i class="fas fa-chevron-down"></i>
+            </a>
+          </div>
+          </div>
+
+          <div class="get-in-touch">
+            <a href="mailto: info@gobblerfmcg.com">Get in touch</a>
           </div>
 
       </div>
@@ -166,9 +182,17 @@ get_header(); ?>
         <img src="https://gobblerfmcg.com/wp-content/uploads/2018/11/good-vibes-cup-768x619.png" id="good-vibes-cup" />
 
         <div class="scroll-down-container">
-          Scroll down
-          <div><i class="fas fa-chevron-down"></i></div>
+          <div>
+            <a href="#open-for-business" class="btn-scroll-down">
+              Scroll down<br />
+              <i class="fas fa-chevron-down"></i>
+            </a>
+          </div>
         </div>
+
+        <div class="get-in-touch">
+            <a href="mailto: info@gobblerfmcg.com">Get in touch</a>
+          </div>
 
       </div>
     </div>
@@ -180,11 +204,6 @@ get_header(); ?>
         <h2 class="fc-purple">OPEN FOR <span class="title-bigger fc-lavender">BUSINESS</span></h2>
         <div class="description fc-lavender">Visual merchandising for Point-of-Sales marketing</div>
         <button class="read-more">Read more</button>
-
-        <div class="scroll-down-container">
-          Scroll down
-          <div><i class="fas fa-chevron-down"></i></div>
-        </div>
 
         <svg version="1.1" id="line4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         	 viewBox="0 0 161.8 181.9" style="enable-background:new 0 0 161.8 181.9;" xml:space="preserve">
@@ -213,6 +232,19 @@ get_header(); ?>
 
         <img src="https://gobblerfmcg.com/wp-content/uploads/2018/11/business-orange-768x999.png" id="business-orange" />
         <img src="https://gobblerfmcg.com/wp-content/uploads/2018/11/business-724x1024.png" id="business" />
+
+        <div class="scroll-down-container">
+          <div>
+            <a href="#lend-me-your-eyes" class="btn-scroll-down">
+              Scroll down<br />
+              <i class="fas fa-chevron-down"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="get-in-touch">
+          <a href="mailto: info@gobblerfmcg.com">Get in touch</a>
+        </div>
 
       </div>
     </div>
@@ -252,8 +284,16 @@ get_header(); ?>
         <img src="https://gobblerfmcg.com/wp-content/uploads/2018/11/media-spoon-768x532.png" id="media-spoon"/>
 
         <div class="scroll-down-container">
-          Scroll down
-          <div><i class="fas fa-chevron-down"></i></div>
+          <div>
+            <a href="#our-portfolio" class="btn-scroll-down">
+              Scroll down<br />
+              <i class="fas fa-chevron-down"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="get-in-touch">
+          <a href="mailto: info@gobblerfmcg.com">Get in touch</a>
         </div>
 
       </div>
@@ -288,8 +328,16 @@ get_header(); ?>
         </div>
 
         <div class="scroll-down-container">
-          Scroll down
-          <div><i class="fas fa-chevron-down"></i></div>
+          <div>
+            <a href="#about-us" class="btn-scroll-down">
+              Scroll down<br />
+              <i class="fas fa-chevron-down"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="get-in-touch">
+          <a href="mailto: info@gobblerfmcg.com">Get in touch</a>
         </div>
 
       </div>
@@ -308,11 +356,6 @@ get_header(); ?>
         </div>
         <div class="row">
           <div class="col text-right"><img src="/wp-content/uploads/2018/12/FMCG_04.png" id="fmcg-04" /></div>
-        </div>
-
-        <div class="scroll-down-container">
-          Scroll down
-          <div><i class="fas fa-chevron-down"></i></div>
         </div>
 
       </div>
@@ -386,11 +429,6 @@ get_header(); ?>
           </div>
         </div>
 
-        <div class="scroll-down-container">
-          Scroll down
-          <div><i class="fas fa-chevron-down"></i></div>
-        </div>
-
       </div>
     </div>
 
@@ -431,13 +469,6 @@ get_header(); ?>
           </a>
         </div>
 
-        <div class="spacer"></div>
-
-        <div class="scroll-down-container">
-          Scroll down
-          <div><i class="fas fa-chevron-down"></i></div>
-        </div>
-
       </div>
     </div>
 
@@ -472,11 +503,6 @@ get_header(); ?>
 
           </div>
         </div><br />
-
-        <div class="scroll-down-container">
-          Scroll down nih
-          <div><i class="fas fa-chevron-down"></i></div>
-        </div>
 
       </div>
     </div>
@@ -547,6 +573,24 @@ get_header(); ?>
       <a href="#point-of-sales-marketing" data-number="9">
         <span class="cd-dot"></span>
         <span class="cd-label">Point of Sales Marketing</span>
+      </a>
+    </li>
+    <li>
+      <a href="#outdoor-media-advertising" data-number="10">
+        <span class="cd-dot"></span>
+        <span class="cd-label">Outdoor Media Advertising</span>
+      </a>
+    </li>
+    <li>
+      <a href="#contact-us" data-number="11">
+        <span class="cd-dot"></span>
+        <span class="cd-label">Contact Us</span>
+      </a>
+    </li>
+    <li>
+      <a href="" data-number="12">
+        <span class="cd-dot"></span>
+        <span class="cd-label">Facebook</span>
       </a>
     </li>
 	</ul>
