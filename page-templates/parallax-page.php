@@ -25,29 +25,16 @@ function addScrollMagicIndicator() {
 add_action( 'wp_enqueue_scripts', 'addScrollMagicIndicator', 20, 1);
 
 function addBootstrapJS() {
-      wp_enqueue_script( 'bootstrap_js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js', array('jquery'), true);
-    }
+  wp_enqueue_script( 'bootstrap_js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js', array('jquery'), true);
+}
 add_action('wp_enqueue_scripts', 'addBootstrapJS', 19, 1);
 
-function addFullpageJS() {
-  wp_enqueue_style('fullpage_css', get_stylesheet_directory_uri(). '/fullpage.css');
+function addDotNavbar() {
+  // wp_enqueue_style('fullpage_css', get_stylesheet_directory_uri(). '/fullpage.css');
 
-  wp_enqueue_script(
-    'fullpage_js',
-    get_stylesheet_directory_uri(). '/js/fullpage/fullpage.min.js',
-    array('jquery'),
-    true
-  );
-
-  // wp_enqueue_script(
-  //   'fullpage_ext_js',
-  //   get_stylesheet_directory_uri(). '/js/fullpage/fullpage.extensions.min.js',
-  //   array('jquery'),
-  //   true
-  // );
-
+  wp_enqueue_script( 'modernizr_js', 'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js');
 }
-add_action('wp_enqueue_scripts', 'addFullpageJS', 21, 1);
+add_action('wp_enqueue_scripts', 'addDotNavbar', 21, 1);
 
 function addMainScript() {
   wp_enqueue_script(
@@ -59,7 +46,8 @@ function addMainScript() {
 add_action('wp_enqueue_scripts', 'addMainScript', 22, 1);
 
 get_header(); ?>
- <div id="primary" class="site-content">
+
+<div id="primary" class="site-content">
    <div id="fullpage" role="main">
 
 
@@ -110,7 +98,7 @@ get_header(); ?>
     </div>
 
     <!-- section -->
-    <div class="section screen-height" id="lets-get-acquainted">
+    <div class="section fixed-height" id="lets-get-acquainted">
       <a name="lets-get-acquainted"></a>
       <div class="content">
   			<div class="text-logo-container"><img src="https://gobblerfmcg.com/wp-content/uploads/2018/12/gobblerfmcg-purple.png" class="text-logo" alt="" /></div>
@@ -145,7 +133,7 @@ get_header(); ?>
     </div>
 
     <!-- section -->
-    <div class="section screen-height" id="feel-good-vibes">
+    <div class="section fixed-height" id="feel-good-vibes">
       <div class="content">
   			<div class="text-logo-container"><img src="https://gobblerfmcg.com/wp-content/uploads/2018/12/gobblerfmcg-white.png" class="text-logo" alt="" /></div>
         <h2 class="fc-purple">FEEL GOOD <span class="title-bigger fc-wheat">VIBES</span></h2>
@@ -186,7 +174,7 @@ get_header(); ?>
     </div>
 
     <!-- section -->
-    <div class="section screen-height" id="open-for-business">
+    <div class="section fixed-height" id="open-for-business">
       <div class="content">
   			<div class="text-logo-container"><img src="https://gobblerfmcg.com/wp-content/uploads/2018/12/gobblerfmcg-purple.png" class="text-logo" alt="" /></div>
         <h2 class="fc-purple">OPEN FOR <span class="title-bigger fc-lavender">BUSINESS</span></h2>
@@ -205,6 +193,7 @@ get_header(); ?>
           d="M8.3,9c2.4,4.5,6.7,11.2,13.9,17.2c5.4,4.5,11.1,7.5,22.6,11.7c16.4,6.1,29.4,9.1,31.4,9.7
         	c9.6,2.3,53.4,12.6,70.2,45.3c3.3,6.5,10.4,23.1,5.3,43.2c-5.7,22.4-22.8,34-27.2,36.8"/>
         </svg>
+        <div class="trigger-line4"></div>
 
         <img src="https://gobblerfmcg.com/wp-content/uploads/2019/01/marketing_solutions_wave-300x167.png" id="marketing-solutions-wave" />
 
@@ -220,6 +209,7 @@ get_header(); ?>
         	c13.7-6,26.8-11.4,30.8-13c65-25.4,118.4-21.7,118.4-21.7c19.5,1.4,64.6,5.1,105.7,36.8c10.9,8.4,28.1,22,40.3,46.4
         	c4.4,8.9,20.7,42.7,9.6,83.4c-14.2,52.1-61.6,73.3-67.9,76"/>
         </svg>
+        <div class="trigger-line5"></div>
 
         <img src="https://gobblerfmcg.com/wp-content/uploads/2018/11/business-orange-768x999.png" id="business-orange" />
         <img src="https://gobblerfmcg.com/wp-content/uploads/2018/11/business-724x1024.png" id="business" />
@@ -227,7 +217,7 @@ get_header(); ?>
       </div>
     </div>
 
-    <div class="section screen-height" id="lend-me-your-eyes">
+    <div class="section fixed-height" id="lend-me-your-eyes">
       <div class="content">
   			<div class="text-logo-container"><img src="https://gobblerfmcg.com/wp-content/uploads/2018/12/gobblerfmcg-white.png" class="text-logo" alt="" /></div>
         <h2 class="fc-purple">LEND ME <span class="title-bigger fc-wheat">YOUR EYES</span></h2>
@@ -245,6 +235,7 @@ get_header(); ?>
           	c6.6,15.3,14.9,26,19.8,31.7c5.1,5.9,13.6,15.8,27.6,23.9c23.6,13.7,46.7,13.4,55.5,13.2c15.1-0.4,25.6-3.9,46.7-10.8
           	c29.8-9.8,31.8-14.8,57.7-22.9c21.8-6.7,36-10.9,55-8.3c7.4,1,25.8,3.6,41.8,18c7.5,6.7,12,13.9,14.7,19" />
         </svg>
+        <div class="trigger-line6"></div>
 
         <img src="https://gobblerfmcg.com/wp-content/uploads/2019/01/outdoor_media_advertising_wave-300x197.png" id="outdoor-media-advertising-wave"/>
 
@@ -501,6 +492,66 @@ get_header(); ?>
 
    </div><!-- #content -->
  </div><!-- #primary -->
+
+ <nav id="cd-vertical-nav">
+  <ul>
+    <li>
+      <a href="#amplify-your-brand" data-number="1">
+        <span class="cd-dot"></span>
+        <span class="cd-label">Amplify Your Brand</span>
+      </a>
+    </li>
+    <li>
+      <a href="#lets-get-acquainted" data-number="2">
+        <span class="cd-dot"></span>
+        <span class="cd-label">Let's Get Acuquainted</span>
+      </a>
+    </li>
+    <li>
+      <a href="#feel-good-vibes" data-number="3">
+        <span class="cd-dot"></span>
+        <span class="cd-label">Feel Good Vibes</span>
+      </a>
+    </li>
+    <li>
+      <a href="#open-for-business" data-number="4">
+        <span class="cd-dot"></span>
+        <span class="cd-label">Open For Business</span>
+      </a>
+    </li>
+    <li>
+      <a href="#lend-me-your-eyes" data-number="5">
+        <span class="cd-dot"></span>
+        <span class="cd-label">Lend Me Your Eyes</span>
+      </a>
+    </li>
+    <li>
+      <a href="#our-portfolio" data-number="6">
+        <span class="cd-dot"></span>
+        <span class="cd-label">Our Portfolio</span>
+      </a>
+    </li>
+    <li>
+      <a href="#about-us" data-number="7">
+        <span class="cd-dot"></span>
+        <span class="cd-label">About Us</span>
+      </a>
+    </li>
+    <li>
+      <a href="#brand-activation" data-number="8">
+        <span class="cd-dot"></span>
+        <span class="cd-label">Brand Activation</span>
+      </a>
+    </li>
+    <li>
+      <a href="#point-of-sales-marketing" data-number="9">
+        <span class="cd-dot"></span>
+        <span class="cd-label">Point of Sales Marketing</span>
+      </a>
+    </li>
+	</ul>
+</nav>
+
 
  <script type='text/javascript' src='https://gobblerfmcg.com/wp-content/plugins/js_composer/assets/lib/vc_carousel/js/transition.min.js?ver=5.5.2'></script>
  <script type='text/javascript' src='https://gobblerfmcg.com/wp-content/plugins/js_composer/assets/lib/vc_carousel/js/vc_carousel.min.js?ver=5.5.2'></script>

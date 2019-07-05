@@ -1,43 +1,55 @@
 jQuery(document).ready(function($) {
 
-  function init() {
-    // Fullpage handler
-    var myFullpage = new fullpage('#fullpage', {
-      // anchors: [
-      //   'amplify-your-brand',
-      //   'lets-get-acquainted',
-      //   'feel-good-vibes',
-      //   'open-for-business',
-      //   'lend-me-your-eyes',
-      //   'our-portfolio',
-      //   'about-us',
-      //   'brand-activation',
-      //   'point-of-sales-marketing',
-      //   'outdoor-mediaadvertising',
-      //   'contact-us',
-      //   'thankyou'
-      // ],
-      // sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
-      navigation: true,
-      navigationPosition: 'right',
-      navigationTooltips: [
-        'Amplify your Brand',
-        'Let\'s Get Acquainted',
-        'Feel Good Vibes',
-        'Open for Business',
-        'Lend Me Your Eyes',
-        'Our Portfolio',
-        'About Us',
-        'Brand Activation',
-        'Point-of-sales Marketing',
-        'Outdoor Media Advertising',
-        'Contact Us',
-        'Thankyou'
-      ]
+  var contentSections = $('.section'),
+  navigationItems = $('#cd-vertical-nav a');
+
+  updateNavigation();
+  $(window).on('scroll', function(){
+    updateNavigation();
+  });
+
+  //smooth scroll to the section
+  navigationItems.on('click', function(event){
+        event.preventDefault();
+        smoothScroll($(this.hash));
+    });
+    //smooth scroll to second section
+    $('.cd-scroll-down').on('click', function(event){
+        event.preventDefault();
+        smoothScroll($(this.hash));
     });
 
-    console.log('Init done!');
-    
+    //open-close navigation on touch devices
+    $('.touch .cd-nav-trigger').on('click', function(){
+      $('.touch #cd-vertical-nav').toggleClass('open');
+
+    });
+    //close navigation on touch devices when selectin an elemnt from the list
+    $('.touch #cd-vertical-nav a').on('click', function(){
+      $('.touch #cd-vertical-nav').removeClass('open');
+    });
+
+  function updateNavigation() {
+    contentSections.each(function(){
+      $this = $(this);
+      var activeSection = $('#cd-vertical-nav a[href="#'+$this.attr('id')+'"]').data('number') - 1;
+      if ( ( $this.offset().top - $(window).height()/2 < $(window).scrollTop() ) && ( $this.offset().top + $this.height() - $(window).height()/2 > $(window).scrollTop() ) ) {
+        navigationItems.eq(activeSection).addClass('is-selected');
+      }else {
+        navigationItems.eq(activeSection).removeClass('is-selected');
+      }
+    });
+  }
+
+  function smoothScroll(target) {
+        $('body,html').animate(
+          {'scrollTop':target.offset().top},
+          600
+        );
+  }
+
+  function init() {
+    console.log('Init done!');    
   }
 
   init();
@@ -158,15 +170,15 @@ jQuery(document).ready(function($) {
 
   var $line4 = $('.line4');
   pathPrepare($line4);
-  animateLine($line4, '#open-for-business h2', 300, .5);
+  animateLine($line4, '.trigger-line4', 300, .5);
 
   var $line5 = $('.line5');
   pathPrepare($line5);
-  animateLine($line5, '#open-for-business h2', 600);
+  animateLine($line5, '.trigger-line5', 300);
 
   var $line6 = $('.line6');
   pathPrepare($line6);
-  animateLine($line6, '#lend-me-your-eyes #line6', 100, .5);
+  animateLine($line6, '.trigger-line6', 100, .5);
 
   var $line7 = $('.line7');
   pathPrepare($line7);
