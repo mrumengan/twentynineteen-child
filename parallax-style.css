@@ -1,0 +1,557 @@
+body {
+  color: white;
+  font-family: AmsiPro, cursive;
+}
+
+header#masthead {
+  display: none;
+}
+h2::before {
+  background: none;
+  height: 0;
+  margin: 0;
+}
+span.title-bigger {
+  font-size: 1.2em;
+  font-family: AmsiProUltra;
+}
+
+.section {
+  width: 100vw;
+}
+.section .content {
+  max-width: 1366px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+.screen-height {
+  height: 100vh;
+}
+.screen-content {
+  min-height: 100vh;
+}
+.section h2, .section .description, .section button.read-more {
+  margin-left: 30px;
+}
+.section .row {
+  width: 100%;
+}
+.spacer {
+  content: ' ';
+}
+.text-logo-container {
+  text-align: right;
+  position: relative;
+}
+.text-logo-container img {
+  margin-top: 20px;
+  margin-right: 40px;
+}
+
+
+#amplify-your-brand {
+  background: #7E57AE;
+}
+.narative-container {
+  text-align: center;
+}
+.narative-container > div {
+  text-transform: uppercase;
+  color: #FEC878;
+  font-weight: 600;
+}
+.narative-container img {
+  width: 75%;
+}
+
+
+#lets-get-acquainted {
+  background: #FEC878;
+  height: 800px;
+}
+#lets-get-acquainted .content {
+  height: 100%;
+  position: relative;
+}
+#lets-get-acquainted .description {
+  color: #7E57AE;
+}
+#choose-your-narative {
+  margin-top: 25px;
+}
+#lets-get-acquainted button.read-more {
+  margin-top: 20px;
+  background: #5784AE;
+}
+#cereal {
+  position: absolute;
+  width: 400px;
+  bottom: -30px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  z-index: +3;
+  left: -40px;
+}
+#right-stripe {
+  position: absolute;
+  height: 500px;
+  right: 0;
+  bottom: 0;
+}
+#men-handshake {
+  position: absolute;
+  height: 300px;
+  right: 160px;
+  bottom: 120px;
+}
+#line1 {
+  position: absolute;
+  right: 420px;
+  bottom: -105px;
+  height: 495px;
+  z-index: +3;
+}
+
+#feel-good-vibes {
+  background: #5784AE;
+}
+#feel-good-vibes .content {
+  position: relative;
+  height: 100%;
+}
+#feel-good-vibes h2, #feel-good-vibes .description,
+#feel-good-vibes button.read-more, #good-vibes-cup {
+  position: absolute;
+}
+#feel-good-vibes h2 {
+  top: 65px;
+  right: 165px;
+  font-size: 3em;
+}
+#feel-good-vibes .description {
+  right: 165px;
+  font-size: 1em;
+  top: 200px;
+}
+#feel-good-vibes button.read-more {
+  background: #FEC878;
+  margin-top: 20px;
+  right: 165px;
+  top: 230px;
+}
+img#good-vibes {
+  position: absolute;
+  height: 630px;
+  bottom: 20px;
+  left: 50px;
+}
+#feel-good-vibes .wave-container {
+  position: absolute;
+  width: 250px;
+  left: 575px;
+  top: 305px;
+  text-align: center;
+}
+#good-vibes-cup {
+  right: 55px;
+  bottom: -50px;
+  height: 350px;
+  z-index: +1;
+}
+#line2 {
+  position: absolute;
+  right: 635px;
+  top: 195px;
+  height: 130px;
+}
+#line3 {
+  position: absolute;
+  right: 10px;
+  top: 360px;
+  height: 410px;
+  width: 1050px;
+  z-index: +1;
+}
+
+#open-for-business {
+  background: #F0AD9F;
+}
+#open-for-business h2 {
+  font-size: 3em;
+}
+#open-for-business button.read-more {
+  background: #7E57AE;
+  margin-top: 20px;
+}
+#line4 {
+  position: absolute;
+  left: 600px;
+  top: 150px;
+  height: 210px;
+}
+#marketing-solutions-wave {
+  position: absolute;
+  top: 330px;
+  left: 460px;
+  width: 210px;
+}
+#line5 {
+  position: absolute;
+  top: 415px;
+  left: 240px;
+  height: 382px;
+  z-index: 1;
+}
+#business-orange {
+  position: absolute;
+  height: 450px;
+  bottom: 0;
+  left: 30px;
+  z-index: 1;
+}
+#color-stripe-right-2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 420px;
+}
+#business {
+  position: absolute;
+  right: 100px;
+  bottom: 30px;
+  height: 550px;
+}
+
+#lend-me-your-eyes {
+  background: #7CBCAE;
+  height: 900px;
+}
+#lend-me-your-eyes h2 {
+  position: absolute;
+  right: 100px;
+  top: 50px;
+  font-size: 3em;
+  margin-right: 40px;
+  margin-top: 20px;
+  white-space: nowrap;
+}
+#lend-me-your-eyes .description {
+  position: absolute;
+  right: 145px;
+  top: 185px;
+}
+#lend-me-your-eyes button.read-more {
+  position: absolute;
+  right: 145px;
+  top: 230px;
+  background: #FEC878;
+}
+#lend-me-your-eyes #color-stripe-left-2 {
+  position: absolute;
+  height: 340px;
+  bottom: 0;
+  left: 0;
+}
+#lend-me-your-eyes #bus {
+  position: absolute;
+  height: 250px;
+  bottom: 100px;
+  left: 0;
+}
+#lend-me-your-eyes #man-jump {
+  position: absolute;
+  height: 400px;
+  bottom: 40px;
+  left: 265px;
+}
+#lend-me-your-eyes #line6 {
+  position: absolute;
+  width: 385px;
+  top: 180px;
+  left: 525px;
+}
+#lend-me-your-eyes #outdoor-media-advertising-wave {
+  position: absolute;
+  width: 210px;
+  top: 390px;
+  right: 280px;
+}
+#lend-me-your-eyes .trigger-line7 {
+  position: absolute;
+  bottom: 655px;
+}
+#lend-me-your-eyes #line7 {
+  position: absolute;
+  height: 220px;
+  top: 420px;
+  right: 225px;
+}
+#lend-me-your-eyes #media-spoon {
+  position: absolute;
+  width: 450px;
+  bottom: -20px;
+  right: -10px;
+}
+
+
+#our-portfolio {
+  background: #5784AE;
+  background-image: url(https://gobblerfmcg.com/wp-content/uploads/2018/11/2V7A1094.png);
+  background-size: cover;
+}
+#our-portfolio .fp-slides {
+  height: 500px;
+}
+#carousel-portfolio  .carousel-indicators {
+  bottom: 20px;
+}
+#carousel-portfolio .carousel-inner {
+  height: 70vh;
+  width: 80vw;
+  margin: 0 auto;
+}
+#carousel-portfolio .carousel-item {
+  height: 100%;
+  text-align: center;
+}
+#carousel-portfolio .carousel-item img {
+  height: 100%;
+}
+
+#about-us {
+  background: #7E57AE;
+}
+#about-us .description {
+  opacity: 0;
+  font-size: .85em;
+}
+#fmcg-04 {
+  width: 80%;
+}
+
+#brand-activation {
+  background: #FEC878;
+}
+#brand-activation h2 {
+  font-size: 1.8em;
+}
+#brand-activation .description {
+  font-size: .9em;
+}
+#brand-activation .fp-slides {
+  height: 400px;
+}
+#carousel-brand-activation {
+  margin-top: 0;
+}
+#carousel-brand-activation .carousel-inner {
+  height: 300px;
+  width: 80vw;
+  margin: 0 auto;
+}
+#carousel-brand-activation .carousel-item {
+  height: 100%;
+  text-align: center;
+}
+#carousel-brand-activation .carousel-item img {
+  height: 100%;
+  width: auto;
+}
+
+#point-of-sales-marketing {
+  background: #5784AE;
+}
+#point-of-sales-marketing .small-image {
+  margin: 40px 5px;
+}
+#point-of-sales-marketing .small-image img {
+  height: 200px;
+  width: auto;
+}
+
+#outdoor-media-advertising {
+  background: #F0AD9F;
+}
+#brand-activation {
+  background: #FEC878;
+}
+#outdoor-media-advertising .fp-slides {
+  height: 350px;
+}
+#carousel-outdoor-media-advertising .carousel-indicators {
+  bottom: -30px;
+}
+#carousel-outdoor-media-advertising .carousel-inner {
+  height: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+#carousel-outdoor-media-advertising .carousel-item {
+  height: 100%;
+  text-align: center;
+}
+#carousel-outdoor-media-advertising .carousel-item img {
+  height: 100%;
+  width: auto;
+}
+
+
+#contact-us {
+  background: #7E57AE;
+}
+#contact-us .wpforms-field-hp {
+  display: none;
+}
+#contact-us textarea {
+  border-radius: 0;
+}
+#contact-us div.wpforms-container-full {
+  margin: 0 20px;
+}
+#contact-us div.wpforms-container-full input {
+  height: 100%;
+  border: none;
+  background: none;
+}
+#contact-us div.wpforms-container-full textarea {
+  height: 5em;
+  border: none;
+  background: none;
+}
+#contact-us div.wpforms-container-full button {
+  font-size: .8em;
+  line-height: .5em;
+}
+#contact-us .description {
+  font-size: .8em;
+}
+#contact-us .wpforms-container {
+  background: #FEC878;
+  color: #7E57AE;
+}
+#contact-us div.wpforms-container-full .wpforms-form .wpforms-field {
+    padding: 0 10px;
+    clear: both;
+    border-bottom: 1px solid #7E57AE;
+    height: 1.8em;
+}
+#contact-us div.wpforms-container-full .wpforms-form .wpforms-field-label {
+  float: left;
+  width: 130px;
+  border-right: 1px solid #7E57AE;
+  height: 100%;  
+  margin: 0 10px 0 0;
+  padding: 6px 0;
+}
+#contact-us .wpforms-field-container > div:nth-child(6) .wpforms-field-label {
+  border-right: none !important;
+}
+#contact-us .wpforms-field-container > div:nth-child(5) {
+  border-bottom: none !important;
+}
+#contact-us .wpforms-field-container > div:nth-child(6) {
+  border-top: 30px solid #7E57AE !important;
+  height: auto !important;
+  padding-bottom: 10px !important;
+}
+#contact-us div.wpforms-container-full .wpforms-form .wpforms-submit-container {
+  background: #7E57AE;
+}
+#contact-us div.wpforms-container-full .wpforms-form .wpforms-submit-container button {
+  color: #7E57AE;
+}
+#contact-us .wpforms-required-label {
+  display: none;
+}
+
+#thank-you {
+  background: #7CBCAE;
+}
+#thank-you h2 {
+  text-align: center;
+}
+#thank-you .thank {
+  margin-top: 50px;
+  font-size: 10em;
+  line-height: 0.8em;
+}
+#thank-you .you {
+  font-size: 17em;
+  line-height: 0.8em;
+}
+
+
+button.read-more {
+  padding: 2px 10px;
+  font-weight: 900;
+  font-size: .8em;
+}
+.description {
+  font-size: .8em;
+}
+.description {
+  font-size: 1em;
+}
+
+.scroll-down-container {
+  font-size: .6em;
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  text-align: center;
+}
+.scroll-down-container > div {
+  animation: bounce .5s infinite alternate;
+  -webkit-animation: bounce .5s infinite alternate;
+}
+
+.animate-alpha {
+  animation-name: opacityPlay;
+  animation-duration: 3s;
+}
+.animate-alpha-reverse {
+  animation-name: opacityPlayReverse;
+  animation-duration: 2s;
+}
+
+/** Animation **/
+@keyframes bounce {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-5px);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+@keyframes opacityPlay {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes opacityPlayReverse {
+  from {opacity: 1;}
+  to {opacity: 01;}
+}
+
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+
+}

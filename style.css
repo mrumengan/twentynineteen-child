@@ -1,0 +1,80 @@
+/*
+ Theme Name:   Twenty Nineteen Child
+ Theme URI:    http://taptalents.com/twenty-nineteen-child/
+ Description:  Twenty Nineteen Child Theme
+ Author:       Mason Rumengan
+ Author URI:   http://taptalents.com/mrumengan
+ Template:     twentynineteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-nineteen-child
+*/
+
+@font-face {
+  font-family: 'AmsiPro';
+  src: url('./fonts/AmsiPro-Regular.ttf') format('truetype'),
+  url('./fonts/AmsiPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AmsiProUltra';
+  src: url('./fonts/AmsiPro-Ultra.ttf') format('truetype'),
+  url('./fonts/AmsiPro-Ultra.woff') format('woff');
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Barokah';
+  src: url('./fonts/Barokah-Bold.ttf') format('truetype'),
+  url('./fonts/Barokah-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MinionPro';
+  src: url('./fonts/MinionPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  line-height: 1.3em;
+}
+
+body, H1, H2, H3 {
+  font-family: AmsiPro, Helvetica;
+}
+
+H2 {
+
+  margin-top: 3px;
+
+  line-height: inherit;
+
+}
+
+p, div {
+  font-family: AmsiPro, "Helvetica", "Permanent Marker";
+}
+
+.fc-white {
+  color: #FFFFFF !important;
+}
+
+.fc-lavender {
+  color: #7E57AE !important;
+}
+
+.fc-wheat {
+  color: #FEC878 !important;
+}
+
+.fc-blue {
+  color: #5784AE !important;
+}
