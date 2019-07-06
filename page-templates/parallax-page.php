@@ -358,6 +358,10 @@ get_header(); ?>
           <div class="col text-right"><img src="/wp-content/uploads/2018/12/FMCG_04.png" id="fmcg-04" /></div>
         </div>
 
+        <div class="back-to-home wheat">
+          <a href="#amplify-your-brand" class="btn-back-to-home">Back to Home</a>
+        </div>
+
       </div>
     </div>
 
@@ -400,6 +404,10 @@ get_header(); ?>
           </a>
         </div>
 
+        <div class="back-to-home purple">
+          <a href="#amplify-your-brand" class="btn-back-to-home">Back to Home</a>
+        </div>
+
       </div>
     </div>
 
@@ -427,6 +435,10 @@ get_header(); ?>
           <div class="">
             <div class="small-image"><img src="https://gobblerfmcg.com/wp-content/uploads/2018/11/11601438_Θ¢Çσ╖óµîéµ₧╢-2-851x1024.jpeg" class="vc_single_image-img attachment-large" alt="" srcset="https://gobblerfmcg.com/wp-content/uploads/2018/11/11601438_Θ¢Çσ╖óµîéµ₧╢-2-851x1024.jpeg 851w, https://gobblerfmcg.com/wp-content/uploads/2018/11/11601438_Θ¢Çσ╖óµîéµ₧╢-2-249x300.jpeg 249w, https://gobblerfmcg.com/wp-content/uploads/2018/11/11601438_Θ¢Çσ╖óµîéµ₧╢-2-768x924.jpeg 768w, https://gobblerfmcg.com/wp-content/uploads/2018/11/11601438_Θ¢Çσ╖óµîéµ₧╢-2-800x963.jpeg 800w, https://gobblerfmcg.com/wp-content/uploads/2018/11/11601438_Θ¢Çσ╖óµîéµ₧╢-2.jpeg 1558w" sizes="(max-width: 640px) 100vw, 640px" width="640" height="770"></div>
           </div>
+        </div>
+
+        <div class="back-to-home seafoam">
+          <a href="#amplify-your-brand" class="btn-back-to-home">Back to Home</a>
         </div>
 
       </div>
@@ -469,6 +481,10 @@ get_header(); ?>
           </a>
         </div>
 
+        <div class="back-to-home deep-blue">
+          <a href="#amplify-your-brand" class="btn-back-to-home">Back to Home</a>
+        </div>
+
       </div>
     </div>
 
@@ -504,6 +520,10 @@ get_header(); ?>
           </div>
         </div><br />
 
+        <div class="back-to-home wheat right">
+          <a href="#amplify-your-brand" class="btn-back-to-home">Back to Home</a>
+        </div>
+
       </div>
     </div>
 
@@ -512,6 +532,11 @@ get_header(); ?>
   			<div class="text-logo-container"><img src="https://gobblerfmcg.com/wp-content/uploads/2018/12/gobblerfmcg-white.png" class="text-logo" alt="" /></div>
         <h2 class="fc-wheat thank"><span class="title-bigger">THANK</span></h2>
         <h2 class="fc-wheat you"><span class="title-bigger">YOU</span></h2>
+
+        <div class="back-to-home purple">
+          <a href="#amplify-your-brand" class="btn-back-to-home">Back to Home</a>
+        </div>
+
       </div>
     </div>
 
@@ -588,8 +613,8 @@ get_header(); ?>
       </a>
     </li>
     <li>
-      <a href="" data-number="12">
-        <span class="cd-dot"></span>
+      <a href="//facebook.com" data-number="12">
+        <span class="cd-dot"><i class="fab fa-facebook"></i></span>
         <span class="cd-label">Facebook</span>
       </a>
     </li>

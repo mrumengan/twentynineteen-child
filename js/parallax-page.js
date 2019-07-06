@@ -10,8 +10,12 @@ jQuery(document).ready(function($) {
 
   //smooth scroll to the section
   navigationItems.on('click', function(event){
-    event.preventDefault();
-    smoothScroll($(this.hash));
+    console.log($(this.hash).selector);
+    if($(this.hash).selector) {
+      event.preventDefault();
+      smoothScroll($(this.hash));
+    } else {
+    }
   });
   //smooth scroll to second section
   $('.cd-scroll-down').on('click', function(event){
@@ -22,6 +26,11 @@ jQuery(document).ready(function($) {
   $('.btn-scroll-down').on('click', function(event){
     event.preventDefault();
     smoothScroll($(this.hash));
+  });
+
+  $('.btn-back-to-home').on('click', function(event){
+    event.preventDefault();
+    smoothScroll($(this.hash), 1200);
   });
 
   //open-close navigation on touch devices
@@ -46,11 +55,12 @@ jQuery(document).ready(function($) {
     });
   }
 
-  function smoothScroll(target) {
+  function smoothScroll(target, speed) {
+    if(!speed) speed = 600;
     try {
       $('body,html').animate(
         {'scrollTop':target.offset().top},
-        600
+        speed
       );
     } catch(e) {
       console.error(e.message);

@@ -55,16 +55,51 @@ span.title-bigger {
 }
 .get-in-touch {
   background: white;
-  width: 100px;
+  display: inline-block;
   height: 1.9em;
   font-size: .6em;
-  color: purple;
+  color: #7E57AE;
   text-align: center;
   font-weight: 900;
   position: absolute;
   right: 100px;
   bottom: 40px;
+  font-family: AmsiProUltra;
+  padding: 1px 5px;
 }
+.back-to-home {
+  display: inline-block;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font-size: .6em;
+  font-weight: 900;
+  font-family: AmsiProUltra;
+  padding: 1px 5px;
+}
+.back-to-home a {
+  color: #FFFFFF;
+}
+.back-to-home.wheat {
+  background: #FEC878;
+}
+.back-to-home.wheat a {
+  color: #7E57AE;
+}
+.back-to-home.purple {
+  background: #7E57AE;
+}
+.back-to-home.seafoam {
+  background: #7CBCAE;
+}
+.back-to-home.deep-blue {
+  background: #5784AE;
+}
+.back-to-home.right {
+  left: auto;
+  right: 30px;
+}
+
 
 #amplify-your-brand {
   background: #7E57AE;
@@ -314,7 +349,7 @@ img#good-vibes {
 }
 #lend-me-your-eyes .trigger-line7 {
   position: absolute;
-  bottom: 655px;
+  top: 500px;
 }
 #lend-me-your-eyes #line7 {
   position: absolute;
@@ -746,7 +781,12 @@ Main components
   transform-origin: 50% 50%;
 }
 .no-touch #cd-vertical-nav li:last-child .cd-dot {
-  background-color: red;
+  background-color: transparent;
+  border-radius: 0;
+  transform: unset;
+  display: inline-block;
+  font-size: 1.2em;  
+  color: #d88683;
 }
 .no-touch #cd-vertical-nav .cd-label {
   position: relative;
