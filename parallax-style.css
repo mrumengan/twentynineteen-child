@@ -542,11 +542,11 @@ img#good-vibes {
 }
 #thank-you .thank {
   margin-top: 50px;
-  font-size: 10em;
+  font-size: 8em;
   line-height: 0.8em;
 }
 #thank-you .you {
-  font-size: 17em;
+  font-size: 10em;
   line-height: 0.8em;
 }
 
@@ -782,12 +782,22 @@ Main components
 }
 .no-touch #cd-vertical-nav li:last-child .cd-dot {
   background-color: transparent;
-  border-radius: 0;
+  border-radius: 50%;
   transform: unset;
   display: inline-block;
   font-size: 1.2em;  
   color: #d88683;
+  overflow: hidden;
+  width: 15px;
+  height: 15px;
 }
+.no-touch #cd-vertical-nav li:last-child .cd-dot i {
+  left: -3px;
+  position: absolute;
+  top: -2px;
+  font-size: 20px;
+}
+
 .no-touch #cd-vertical-nav .cd-label {
   position: relative;
   margin-right: 10px;
